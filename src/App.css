@@ -44,3 +44,11 @@
 .called {
   text-decoration: line-through;
 }
+
+.called button {
+  text-decoration: line-through;
+}
+
+.called button:hover {
+  cursor: not-allowed;
+}

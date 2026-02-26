@@ -7,6 +7,7 @@ export default function Navigation() {
     <div className='nav-bar'>
       <Link to="/">Home</Link>
       <Link to="/game">New Game</Link>
+      <Link to="/custom-game">New Custom Game</Link>
       <form action="https://www.paypal.com/donate" method="post" target="_top">
         <input type="hidden" name="business" value="R8W2J7W4MF4XW" />
         <input type="hidden" name="no_recurring" value="1" />

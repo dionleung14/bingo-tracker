@@ -1,14 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Navigation from './components/Navigation'
 import Home from './pages/Home'
 import Game from './pages/Game'
+import CustomGame from './pages/CustomGame'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <Router>
@@ -17,6 +14,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/game" element={<Game />} />
         <Route path="/game/:maxNums" element={<Game />} />
+        <Route path="/custom-game" element={<CustomGame />} />
+        <Route path="/custom-game/:maxNums" element={<CustomGame />} />
         <Route path="*" element={<Home />} />
       </Routes>
       {/* <div>
