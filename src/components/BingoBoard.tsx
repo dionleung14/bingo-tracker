@@ -2,13 +2,18 @@ import React from "react";
 
 export default function BingoBoard({
   calledNumbers,
+  maxNums
 }: {
   calledNumbers: number[];
+  maxNums: number;
 }) {
+
+
   return (
     <div>
       BingoBoard
       <div>Called numbers: {calledNumbers.join(", ")}</div>
+      <div>Max numbers: {maxNums}</div>
       <table>
         <tbody>
           <tr>
