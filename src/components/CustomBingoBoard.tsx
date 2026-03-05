@@ -13,7 +13,6 @@ export default function CustomBingoBoard({
   return (
     <div>
       Custom BingoBoard
-      <div>Called numbers: {calledNumbers.join(", ")}</div>
       <div>Max numbers: {maxNums}</div>
       <table>
         <tbody>
